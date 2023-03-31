@@ -1,0 +1,322 @@
+.container {
+  width: 64%;
+  min-height: 100vh;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: white;
+  margin-bottom: 18px;
+}
+.container .form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1190px) {
+  .container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .form .search-container {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .container .form .select-container {
+    display: none;
+    width: 50%;
+  }
+  .container .form .select-container.game {
+    display: flex;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .container .form .responsive-selects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .container .form .responsive-selects .select-container {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 49%;
+  }
+}
+.container .form .element {
+  margin-right: 15px;
+  background-color: rgba(76, 96, 133, 0.15);
+  border: none;
+  height: 50px;
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.container .form .element::placeholder {
+  color: #898c9a;
+}
+.container .card-container {
+  border: 1px solid #4f5e7c;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 1000px;
+  margin-bottom: 80px;
+  background-color: #2f3140;
+}
+.container .card-container .top-flex {
+  margin-top: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 730px) {
+  .container .card-container .top-flex .showing {
+    display: none;
+  }
+  .container .card-container .top-flex .select-container {
+    width: 100% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container .card-container .top-flex .showing {
+  font-size: 14px;
+  color: #acafbb;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.container .card-container .top-flex .select-container {
+  margin-right: 0px;
+  width: 150px;
+}
+.container .card-container .card-grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: auto;
+  grid-row-gap: 15px;
+}
+@media screen and (max-width: 1680px) {
+  .container .card-container .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1420px) {
+  .container .card-container .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1070px) {
+  .container .card-container .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 730px) {
+  .container .card-container .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.container .card-container .paginator-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container .card-container .paginator-container .paginator {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container .card-container .paginator-container .paginator button {
+  cursor: pointer;
+  background-color: #5762d5;
+  border: none;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 9px;
+  color: white;
+  padding: 10px 14px;
+  transition: 0.6s;
+  font-size: 15px;
+}
+.container .card-container .paginator-container .paginator button.active {
+  border: none;
+  background-color: #5762d5;
+}
+.container .card-container .paginator-container .paginator button.not-active {
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+}
+.container .card-container .paginator-container .paginator button input[type=number] {
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.container .card-container .paginator-container .paginator button input[type=number]:focus {
+  outline: none;
+}
+.container .card-container .paginator-container .paginator button input[type=number]::-webkit-outer-spin-button, .container .card-container .paginator-container .paginator button input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-right: 2px;
+  background-color: rgba(76, 96, 133, 0.15);
+  border: none;
+  height: 50px;
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: left;
+}
+.search-container .image {
+  margin-left: 10px;
+  max-width: 18px;
+  max-height: 18px;
+}
+.search-container input[type=text] {
+  width: 93%;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+.search-container input[type=text]::placeholder {
+  color: #898c9a;
+  font-size: 14px;
+}
+.search-container input[type=text]:focus {
+  outline: none;
+}
+
+.responsive-selects {
+  display: none;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+  background-color: rgba(76, 96, 133, 0.15);
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.select-container.game {
+  min-width: 25%;
+}
+@media screen and (max-width: 1190px) {
+  .select-container.game {
+    width: 100%;
+  }
+}
+.select-container .image {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 18px;
+  max-height: 18px;
+}
+.select-container .input-text {
+  background-color: transparent;
+  border: none;
+}
+.select-container label {
+  margin-left: 8px;
+  width: 80%;
+  font-size: 10px;
+  color: #898c9a;
+}
+
+/*button container*/
+.select-container select {
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 13px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.select-container select option {
+  background-color: black;
+}
+.select-container select:focus {
+  outline: none;
+}
+.select-container .select-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.select-container .select-content .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.select-container .select-content .description label {
+  min-width: 80px;
+}
+.select-container .select-content .description span {
+  margin-top: 5px;
+  margin-left: 9px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

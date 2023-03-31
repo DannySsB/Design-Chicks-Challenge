@@ -1,0 +1,106 @@
+<div class="container">
+    <span class="title">Condimentum consectetur</span>
+      
+    <div class="form">
+
+          <!--Select a game-->
+          <div class="select-container game">
+            <div class="select-content">
+              <img class="image" src="../../../assets/item-default.svg">
+              <span>Select a game</span>
+            </div>
+      
+            <div class="select-box">
+              <select>
+                <option value="Select a game">Select a game</option>
+              </select>
+            </div>
+          </div>
+      
+          <!--Search bar-->
+          <div class="search-container">
+            <img class="image" src="../../../assets/svg-search-icon-9.jpg">
+            <input type="text" name="search" placeholder="Search">
+          </div>
+      
+          <!--Select Price-->
+          <div class="select-container">
+      
+            <div class="select-content">
+              <img class="image" src="../../../assets/item-bag.svg">
+              <div class="description">
+                <label>Price</label>
+                <span>All</span>
+              </div>
+            </div>
+      
+            <select id="prices">
+              <option value="All">All</option>
+              
+            </select>
+          </div>
+      
+          <!--Select Item Type-->
+      <div class="select-container">
+        <div class="select-content">
+          <img class="image" src="../../assets/feather.svg">
+          <div class="description">
+            <label>Item Type</label>
+            <span>All</span>
+          </div>
+        </div>
+          <select name="item-types">
+            <option value="All">All</option>
+          </select>
+     </div>
+      
+  </div>
+
+  <div class="card-container">
+      
+    <div class="top-flex">
+
+      <span class="showing">Showing 20 - from 125</span>
+
+      <div class="select-container" [style.width]="'170px'">
+        <div class="select-content">
+          <img class="image" src="../../assets/filter.svg">
+          <div class="description">
+            <label>Sort By</label>
+            <span>Featured</span>
+          </div>
+        </div>
+
+        <select name="sorted-by">
+          <option value="Featured">Featured</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Item card grid -->
+    <div class="card-grid">
+      <ng-container>
+        <app-itemcard></app-itemcard>
+      </ng-container>
+    </div>
+
+    <div class="paginator-container">
+      <div class="paginator">
+        <button [style.border]="'1px solid #5762d5'" [style.background-color]="'transparent'">
+          <div class="arrow left"></div>
+        </button>       
+          <button>1</button>
+          <button class="not-active">2</button>
+          <button class="not-active">3</button>
+          <button class="not-active">4</button>
+          <button class="not-active">...</button>
+          <button class="not-active">11</button>
+        <button [style.border]="'1px solid #5762d5'" [style.background-color]="'transparent'">
+          <div class="arrow right"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

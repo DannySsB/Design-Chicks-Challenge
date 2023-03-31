@@ -1,0 +1,186 @@
+.main-container {
+    width: 100%;
+  }
+  .main-container .payment-methods {
+    width: 100%;
+    min-height: 100px;
+    background-color: #2b2c3c;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 1200px) {
+    .main-container .payment-methods {
+      align-items: center;
+      justify-content: center;
+    }
+    .main-container .payment-methods .first {
+      margin-left: 0px !important;
+    }
+    .main-container .payment-methods img {
+      width: 60px !important;
+      height: 60px !important;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .main-container .payment-methods {
+      align-items: center;
+      justify-content: center;
+    }
+    .main-container .payment-methods .first {
+      margin-left: 0px !important;
+    }
+    .main-container .payment-methods img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .main-container .payment-methods {
+      align-items: center;
+      justify-content: center;
+    }
+    .main-container .payment-methods .first {
+      margin-left: 0px !important;
+    }
+    .main-container .payment-methods img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .main-container .payment-methods span {
+      font-size: 15px;
+    }
+  }
+  .main-container .payment-methods .first {
+    margin-left: 340px;
+  }
+  .main-container .payment-methods img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  .main-container .payment-methods span {
+    font-family: "Roboto", sans-serif;
+    color: #c5c6ca;
+  }
+  .main-container .bottom {
+    width: 100%;
+    padding: 40px 0px 10px 0px;
+    background-color:  #303141;
+  }
+  @media screen and (max-width: 900px) {
+    .main-container .bottom {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    .main-container .bottom .social-media {
+      justify-content: center !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .main-container .bottom .links-grid {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+  }
+  .main-container .bottom .social-media {
+    max-width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    margin-left: 340px;
+    border-bottom: 1px solid #4c6085;
+    box-sizing: border-box;
+  }
+  .main-container .bottom .social-media img {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .main-container .bottom .links-grid {
+    display: grid;
+    max-width: 65%;
+    margin-left: 320px;
+    margin-right: 320px;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1px;
+    font-family: "Roboto", sans-serif;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    font-size: 14px;
+    letter-spacing: 0.68px;
+    justify-content: center;
+    justify-items: center;
+  }
+  @media screen and (max-width: 1200px) {
+    .main-container .bottom .links-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .main-container .bottom .links-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .main-container .bottom .links-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .main-container .bottom .links-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .main-container .bottom .links-grid .element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 42px;
+  }
+  .main-container .bottom .links-grid .element img {
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .main-container .bottom .links-grid .element .title {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.12px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .main-container .bottom .links-grid .element a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:#898c9a;
+  }
+  .main-container .bottom .links-grid .element a:hover {
+    text-decoration: underline;
+  }
+  .main-container .bottom .links-grid .trustpilots {
+    display: flex;
+    align-items: center;
+    color: #898c9a;
+    height: 25px;
+    margin-top: 42px;
+  }
+  .main-container .bottom .links-grid .trustpilots img {
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .main-container .copyright {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #898c9a;
+    background-color: #303141;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }

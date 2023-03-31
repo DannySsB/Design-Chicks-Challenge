@@ -1,0 +1,31 @@
+.main {
+  background-image: url("../assets/background.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 5;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+
+  
+  
+
